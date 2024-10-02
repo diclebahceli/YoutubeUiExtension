@@ -1,0 +1,13 @@
+{
+    "manifest_version":3,
+    "name": "Youtube Chrome Extension",
+    "version": "1.0",
+    "description": "Swap the recommended videos and the comments sections on Youtube",
+    "permissions": ["activeTab"],
+    "content_scripts": [
+        {
+            "matches": ["https://www.youtube.com/*"],
+            "js": ["content.js"]
+        }
+    ]
+}
